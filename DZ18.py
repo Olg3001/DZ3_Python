@@ -29,7 +29,7 @@ else:
         list = []
     
         for i in range(0, n):
-            random_number = round(random.uniform(1, n / 2))
+            random_number = round(random.uniform(1, 10))
             list.append(random_number)
 
         print(f'\nThe list is: {list}')
