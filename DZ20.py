@@ -54,16 +54,18 @@ language = input('Choose the language. For Russian press 1, for English press 2:
 word = input('Input the word in this language: ').upper()
 sum = 0
 
-if language == '1':
+if language is '1':
     for i in word:
         for k, v in russian_dictionary.items():
             if i in v:
                 sum += k
-elif language == '2':
+
+elif language is '2':
     for i in word:
         for k, v in english_dictionary.items():
             if i in v:
-                sum += k     
+                sum += k
+ 
 else: 
     print('Wrong input. Please select English or Russian.')                            
 
